@@ -47,13 +47,13 @@ void* clnt_connection(void * arg){
 		if (strcmp(msg,"on")==0){
             printf("on");
 			// snprintf(work_result, sizeof(work_result),"ON\n");
-			snprintf(work_result, sizeof(work_result),"ON");
+			snprintf(work_result, sizeof(work_result),"ON\n");
 			digitalWrite(LED_PIN, HIGH);
 		}
 		else if(strcmp(msg,"off")==0){
             printf("off");
 			// snprintf(work_result, sizeof(work_result),"OFF\n");
-			snprintf(work_result, sizeof(work_result),"OFF");
+			snprintf(work_result, sizeof(work_result),"OFF\n");
 			digitalWrite(LED_PIN, LOW);
 		}else{
             printf("fail");
